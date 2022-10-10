@@ -1,0 +1,95 @@
+﻿@using OtoSoft.Plant.Entities.DTOs.Herb
+@model List<HerbDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+
+
+    <div class="col-12 text-end">
+        <a asp-action="Add" class="btn btn-success">
+            Create Herb
+        </a>
+
+
+    </div>
+
+    <div class="col-12">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Herb Id</th>
+                    <th>Herb Name</th>
+                    <th>Herb Description</th>
+                    <th>Herb Image</th>
+                    <th>Herb Complaints</th>
+                    <th>Process</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+                @foreach (var herb in Model)
+                {
+                    <tr>
+                        <td>@herb.Id</td>
+                        <td>@herb.Name</td>
+                        <td>@herb.Description</td>
+                        <td><image src="@herb.Image" style="width:50px; height:50px;"></image></td>
+                        <td>
+                            @foreach (var item in herb.ComplaintDto)
+                            {
+                                <a href="/Complaint/Detail/@item.Id">@item.Name</a>
+                            }
+                        </td>
+                        <td>
+                            <a href="/Admin/Herb/Edit/@herb.Id">Edit</a>
+                            <button class="btn btn-danger" id="deleteBtn" onclick="deleteHerb(@herb.Id)">Sil</button>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+<script>
+
+
+    function deleteHerb(id) {
+        $.ajax({
+            type: "GET",
+            url: "/Admin/Herb/Delete/" + id,
+            contentType: "application/json",
+            success: function(data) {
+                console.log(data)
+                $.each(data.value, function(index, value) {
+                    $("#tableData").append(`
+                        <tr>
+                            <td>${value.Id}</td>
+                            <td>${value.Name}</td>
+                            <td>${value.Description}</td>
+                            <td><image src="${value.Image}" style="width:50px; height:50px;"></image></td>
+                            <td>
+                            <a href="/Admin/Herb/Edit/${value.Id}">Edit</a>
+                            <button class="btn btn-danger" id="deleteBtn" onclick="deleteHerb(${value.Id})">Sil</button>
+
+                             </td>
+                        </tr>
+                    `)
+
+                })
+                
+                
+            },
+            error: function() {
+                alert("as")
+            }
+        })
+
+    }
+</script>
+

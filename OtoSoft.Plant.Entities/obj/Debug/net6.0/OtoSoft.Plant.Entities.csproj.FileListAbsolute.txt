@@ -1,0 +1,15 @@
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\bin\Debug\net6.0\OtoSoft.Plant.Entities.deps.json
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\bin\Debug\net6.0\OtoSoft.Plant.Entities.dll
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\bin\Debug\net6.0\OtoSoft.Plant.Entities.pdb
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\bin\Debug\net6.0\Core.dll
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\bin\Debug\net6.0\Core.pdb
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\obj\Debug\net6.0\OtoSoft.Plant.Entities.csproj.AssemblyReference.cache
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\obj\Debug\net6.0\OtoSoft.Plant.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\obj\Debug\net6.0\OtoSoft.Plant.Entities.AssemblyInfoInputs.cache
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\obj\Debug\net6.0\OtoSoft.Plant.Entities.AssemblyInfo.cs
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\obj\Debug\net6.0\OtoSoft.Plant.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\obj\Debug\net6.0\OtoSoft.Plant.Entities.csproj.CopyComplete
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\obj\Debug\net6.0\OtoSoft.Plant.Entities.dll
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\obj\Debug\net6.0\refint\OtoSoft.Plant.Entities.dll
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\obj\Debug\net6.0\OtoSoft.Plant.Entities.pdb
+C:\Users\Serkan\Desktop\OtoSoft\OtoSoft.Plant.Entities\obj\Debug\net6.0\ref\OtoSoft.Plant.Entities.dll

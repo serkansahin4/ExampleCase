@@ -1,0 +1,34 @@
+﻿@using OtoSoft.Plant.Entities.DTOs.Herb
+@model List<HerbDto>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Herb Id</th>
+            <th>Herb Name</th>
+            <th>Herb Description</th>
+            <th>Herb Image</th>
+            <th>Herb Complaints</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var herb in Model)
+        {
+            <tr>
+                <td>@herb.Id</td>
+                <td>@herb.Name</td>
+                <td>@herb.Description</td>
+                <td>@herb.Image</td>
+                <td>@foreach (var item in herb.Complaints)
+                    {
+                      <a href="/Complaint/Details/@item.Id">@item.Name</a> 
+                    }
+                    </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

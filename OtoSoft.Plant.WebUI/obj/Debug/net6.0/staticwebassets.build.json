@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "7TkdIxKW/FGXQ/xyWwi+GAyUK3a8wiAh6Q38XJXd6fo=",
+  "Source": "OtoSoft.Plant.WebUI",
+  "BasePath": "_content/OtoSoft.Plant.WebUI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "OtoSoft.Plant.WebUI\\wwwroot",
+      "Source": "OtoSoft.Plant.WebUI",
+      "ContentRoot": "C:\\Users\\Serkan\\Desktop\\OtoSoft\\OtoSoft.Plant.WebUI\\wwwroot\\",
+      "BasePath": "_content/OtoSoft.Plant.WebUI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Serkan\\Desktop\\OtoSoft\\OtoSoft.Plant.WebUI\\wwwroot\\jquery\\jquery.min.js",
+      "SourceId": "OtoSoft.Plant.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serkan\\Desktop\\OtoSoft\\OtoSoft.Plant.WebUI\\wwwroot\\",
+      "BasePath": "_content/OtoSoft.Plant.WebUI",
+      "RelativePath": "jquery/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery\\jquery.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Serkan\\Desktop\\OtoSoft\\OtoSoft.Plant.WebUI\\wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.min.js",
+      "SourceId": "OtoSoft.Plant.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serkan\\Desktop\\OtoSoft\\OtoSoft.Plant.WebUI\\wwwroot\\",
+      "BasePath": "_content/OtoSoft.Plant.WebUI",
+      "RelativePath": "jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Serkan\\Desktop\\OtoSoft\\OtoSoft.Plant.WebUI\\wwwroot\\twitter-bootstrap\\css\\bootstrap.min.css",
+      "SourceId": "OtoSoft.Plant.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serkan\\Desktop\\OtoSoft\\OtoSoft.Plant.WebUI\\wwwroot\\",
+      "BasePath": "_content/OtoSoft.Plant.WebUI",
+      "RelativePath": "twitter-bootstrap/css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\twitter-bootstrap\\css\\bootstrap.min.css"
+    }
+  ]
+}

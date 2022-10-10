@@ -1,0 +1,50 @@
+﻿@using OtoSoft.Plant.Entities.DTOs.Complaint
+@model OtoSoft.Plant.Entities.DTOs.Herb.HerbCreateDto
+
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<SelectListItem> complaintDtos = ViewBag.ComplaintDto as List<SelectListItem>;
+}
+
+<h1>Add</h1>
+
+<h4>HerbCreateDto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Add" asp-antiforgery="true" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input type="file" asp-for="Image" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Complaints" class="control-label"></label>
+                <select asp-for="Complaints" name="Complaints" asp-items="@complaintDtos" multiple>
+                    <option value="">Please choose complaints</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
